@@ -6,6 +6,10 @@
   <script src="bundle.js" async></script>
 </head>
 <body>
-  <h1 data-controller="example"></h1>
+  <div data-controller='hello'>
+    <input data-hello-target='name' type='text'>
+    <button data-action='click->hello#greet'>Greet</button>
+  </div>
+  <h1 data-controller="hello"></h1>
 </body>
 </html>
