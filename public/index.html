@@ -10,6 +10,23 @@
     <input data-hello-target='name' type='text'>
     <button data-action='click->hello#greet'>Greet</button>
   </div>
-  <h1 data-controller="hello"></h1>
+
+  <br><br><br>
+
+  <div data-controller='clipboard'>
+    PIN: <input data-clipboard-target='source' type="text" value="1234" readonly>
+    <button data-action='clipboard#copy'>Copy to Clipboard</button>
+  </div>
+  <div data-controller='clipboard'>
+    PIN: <input data-clipboard-target='source' type="text" value="4321" readonly>
+    <a href='#' data-action='clipboard#copy' class='clipboard-button'>Copy to Clipboard</a>
+  </div>
+
+  <br>
+
+  <div data-controller='clipboard'>
+    PIN: <textarea data-clipboard-target='source'readonly>3737</textarea>
+    <button data-action='clipboard#copy'>Copy to Clipboard</button>
+  </div>
 </body>
 </html>
